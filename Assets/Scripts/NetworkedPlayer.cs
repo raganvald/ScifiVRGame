@@ -16,8 +16,13 @@ public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
 
         if (photonView.IsMine)
         {
-            playerGlobal = GameObject.Find("OVRPlayerController").transform;
-            playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
+            GameObject trackedAlias = GameObject.Find("TrackedAlias");
+
+            //playerGlobal = GameObject.Find("OVRPlayerController").transform;
+            //playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
+
+            playerGlobal = trackedAlias.transform.Find("Aliases/PlayAreaAlias").transform;
+            playerLocal = trackedAlias.transform.Find("Aliases/HeadsetAlias").transform;
 
             transform.SetParent(playerLocal);
             transform.localPosition = Vector3.zero;
