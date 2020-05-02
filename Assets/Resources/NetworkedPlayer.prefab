@@ -159,5 +159,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatar: {fileID: 1359466713618658792}
-  playerGlobal: {fileID: 0}
   playerLocal: {fileID: 0}

@@ -7,7 +7,7 @@ using UnityEngine;
 public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
 {
     public GameObject avatar;
-    public Transform playerGlobal;
+    //public Transform playerGlobal;
     public Transform playerLocal;
 
     private void Start()
@@ -21,7 +21,7 @@ public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
             //playerGlobal = GameObject.Find("OVRPlayerController").transform;
             //playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
 
-            playerGlobal = trackedAlias.transform.Find("Aliases/PlayAreaAlias").transform;
+            //playerGlobal = trackedAlias.transform.Find("Aliases/PlayAreaAlias").transform;
             playerLocal = trackedAlias.transform.Find("Aliases/HeadsetAlias").transform;
 
             transform.SetParent(playerLocal);
@@ -35,8 +35,8 @@ public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
     {
         if(stream.IsWriting)
         {
-            stream.SendNext(playerGlobal.position);
-            stream.SendNext(playerGlobal.rotation);
+            //stream.SendNext(playerGlobal.position);
+            //stream.SendNext(playerGlobal.rotation);
             stream.SendNext(playerLocal.position);
             stream.SendNext(playerLocal.rotation);
         }
@@ -44,8 +44,8 @@ public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
         {
             transform.position = (Vector3)stream.ReceiveNext();
             transform.rotation = (Quaternion)stream.ReceiveNext();
-            avatar.transform.localPosition = (Vector3)stream.ReceiveNext();
-            avatar.transform.localRotation = (Quaternion)stream.ReceiveNext();
+            //avatar.transform.localPosition = (Vector3)stream.ReceiveNext();
+            //avatar.transform.localRotation = (Quaternion)stream.ReceiveNext();
         }
     }
 }
