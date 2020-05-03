@@ -5886,6 +5886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RampDriver
       objectReference: {fileID: 0}
+    - target: {fileID: 7366986819431712902, guid: 08825967072cf194bbe80ba3abd9a0cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4516821587788821408, guid: 08825967072cf194bbe80ba3abd9a0cf,
         type: 3}
       propertyPath: driveAxis
@@ -5965,11 +5970,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366986819431712902, guid: 08825967072cf194bbe80ba3abd9a0cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1101611136335000803, guid: 08825967072cf194bbe80ba3abd9a0cf,
         type: 3}
@@ -41486,6 +41486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: body
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cbe75de401b40dd44b525da725390f15, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cbe75de401b40dd44b525da725390f15, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -46344,7 +46348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1516692563948758, guid: 6ff457672b5abe748928751a96880706, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4153249588296564, guid: 6ff457672b5abe748928751a96880706, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46495,15 +46499,15 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 54654685459298818, guid: 6ff457672b5abe748928751a96880706,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 136222110334591178, guid: 6ff457672b5abe748928751a96880706,
         type: 3}
       propertyPath: m_Radius
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 54654685459298818, guid: 6ff457672b5abe748928751a96880706,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff457672b5abe748928751a96880706, type: 3}
