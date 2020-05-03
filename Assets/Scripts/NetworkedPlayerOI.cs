@@ -16,13 +16,8 @@ public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
 
         if (photonView.IsMine)
         {
-            //GameObject trackedAlias = GameObject.Find("TrackedAlias");
-
             playerGlobal = GameObject.Find("OVRPlayerController").transform;
             playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
-
-            //playerGlobal = trackedAlias.transform.Find("Aliases/PlayAreaAlias").transform;
-            //playerLocal = trackedAlias.transform.Find("Aliases/HeadsetAlias").transform;
 
             transform.SetParent(playerLocal);
             transform.localPosition = Vector3.zero;
@@ -33,12 +28,12 @@ public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if(stream.IsWriting)
+        if (stream.IsWriting)
         {
             stream.SendNext(playerGlobal.position);
             stream.SendNext(playerGlobal.rotation);
-            stream.SendNext(playerLocal.position);
-            stream.SendNext(playerLocal.rotation);
+            stream.SendNext(playerLocal.localPosition);
+            stream.SendNext(playerLocal.localRotation);
         }
         else
         {

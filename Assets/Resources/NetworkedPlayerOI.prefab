@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1534162485044266573}
   - component: {fileID: 1303332950317949037}
   m_Layer: 0
-  m_Name: CubeAvatar
+  m_Name: Avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
