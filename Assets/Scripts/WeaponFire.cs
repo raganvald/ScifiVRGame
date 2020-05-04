@@ -3,7 +3,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-
+    
     public class WeaponFire : MonoBehaviour
     {
         //[FormerlySerializedAs("_bulletTrace")]
