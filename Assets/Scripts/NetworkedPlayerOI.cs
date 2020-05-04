@@ -7,8 +7,12 @@ using UnityEngine;
 public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
 {
     public GameObject avatar;
+    public GameObject handL;
+    public GameObject handR;
     public Transform playerGlobal;
     public Transform playerLocal;
+    public Transform handLLocal;
+    public Transform handRLocal;
 
     private void Start()
     {
@@ -18,6 +22,8 @@ public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
         {
             playerGlobal = GameObject.Find("OVRPlayerController").transform;
             playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
+            handLLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/LeftHandAnchor");
+            handRLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/RightHandAnchor");
 
             transform.SetParent(playerLocal);
             transform.localPosition = Vector3.zero;
@@ -34,6 +40,10 @@ public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
             stream.SendNext(playerGlobal.rotation);
             stream.SendNext(playerLocal.localPosition);
             stream.SendNext(playerLocal.localRotation);
+            stream.SendNext(handLLocal.localPosition);
+            stream.SendNext(handLLocal.localRotation);
+            stream.SendNext(handRLocal.localPosition);
+            stream.SendNext(handRLocal.localRotation);
         }
         else
         {
@@ -41,6 +51,11 @@ public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
             transform.rotation = (Quaternion)stream.ReceiveNext();
             avatar.transform.localPosition = (Vector3)stream.ReceiveNext();
             avatar.transform.localRotation = (Quaternion)stream.ReceiveNext();
+            handL.transform.localPosition = (Vector3)stream.ReceiveNext();
+            handL.transform.localRotation = (Quaternion)stream.ReceiveNext();
+            handR.transform.localPosition = (Vector3)stream.ReceiveNext();
+            handR.transform.localRotation = (Quaternion)stream.ReceiveNext();
+
         }
     }
 }
