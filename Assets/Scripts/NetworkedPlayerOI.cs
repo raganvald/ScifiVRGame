@@ -6,29 +6,24 @@ using UnityEngine;
 
 public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
 {
-    public GameObject avatar;
-    public GameObject handL;
-    public GameObject handR;
-    public Transform playerGlobal;
-    public Transform playerLocal;
-    public Transform handLLocal;
-    public Transform handRLocal;
+    public GameObject networkPlayerHead, networkPlayerLHand, networkPlayerRHand;
+    Transform playerHead, playerLHand, playerRHand;
 
     private void Start()
     {
-        Debug.Log("NetworkedPlayer Start");
-
         if (photonView.IsMine)
         {
-            playerGlobal = GameObject.Find("OVRPlayerController").transform;
-            playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
-            handLLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/LeftHandAnchor");
-            handRLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/RightHandAnchor");
+            playerHead = GameObject.Find("CenterEyeAnchor").transform;
+            playerLHand = GameObject.Find("LeftControllerAnchor").transform;
+            playerRHand = GameObject.Find("RightControllerAnchor").transform;
 
-            transform.SetParent(playerLocal);
-            transform.localPosition = Vector3.zero;
+            networkPlayerHead.transform.SetParent(playerHead);
+            networkPlayerLHand.transform.SetParent(playerLHand);
+            networkPlayerRHand.transform.SetParent(playerRHand);
 
-            avatar.SetActive(false);
+            networkPlayerHead.SetActive(false);
+            networkPlayerLHand.SetActive(false);
+            networkPlayerRHand.SetActive(false);
         }
     }
 
@@ -36,26 +31,25 @@ public class NetworkedPlayerOI : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (stream.IsWriting)
         {
-            stream.SendNext(playerGlobal.position);
-            stream.SendNext(playerGlobal.rotation);
-            stream.SendNext(playerLocal.localPosition);
-            stream.SendNext(playerLocal.localRotation);
-            stream.SendNext(handLLocal.localPosition);
-            stream.SendNext(handLLocal.localRotation);
-            stream.SendNext(handRLocal.localPosition);
-            stream.SendNext(handRLocal.localRotation);
+            stream.SendNext(playerHead.position);
+            stream.SendNext(playerHead.rotation);
+
+            stream.SendNext(playerLHand.position);
+            stream.SendNext(playerLHand.rotation);
+
+            stream.SendNext(playerRHand.position);
+            stream.SendNext(playerRHand.rotation);
         }
         else
         {
-            transform.position = (Vector3)stream.ReceiveNext();
-            transform.rotation = (Quaternion)stream.ReceiveNext();
-            avatar.transform.localPosition = (Vector3)stream.ReceiveNext();
-            avatar.transform.localRotation = (Quaternion)stream.ReceiveNext();
-            handL.transform.localPosition = (Vector3)stream.ReceiveNext();
-            handL.transform.localRotation = (Quaternion)stream.ReceiveNext();
-            handR.transform.localPosition = (Vector3)stream.ReceiveNext();
-            handR.transform.localRotation = (Quaternion)stream.ReceiveNext();
+            networkPlayerHead.transform.position = (Vector3)stream.ReceiveNext();
+            networkPlayerHead.transform.rotation = (Quaternion)stream.ReceiveNext();
 
+            networkPlayerLHand.transform.position = (Vector3)stream.ReceiveNext();
+            networkPlayerLHand.transform.rotation = (Quaternion)stream.ReceiveNext();
+
+            networkPlayerRHand.transform.position = (Vector3)stream.ReceiveNext();
+            networkPlayerRHand.transform.rotation = (Quaternion)stream.ReceiveNext();
         }
     }
 }

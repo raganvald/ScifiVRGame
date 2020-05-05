@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/DemoSceneVRTK.unity
-    guid: ce56483f15164ea4a8fa8c17217df07b
-  - enabled: 1
     path: Assets/Scenes/NetworkTestSceneOI.unity
     guid: 8c8891690910c6c45843549372de9724
+  - enabled: 1
+    path: Assets/Scenes/DemoSceneOVRNetwork.unity
+    guid: 44f7feac965e4eb48a440e3379bfee21
   m_configObjects: {}
