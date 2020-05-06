@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
+public class NetworkedPlayerLocal : MonoBehaviourPunCallbacks, IPunObservable
 {
     public GameObject networkPlayerHead, networkPlayerLHand, networkPlayerRHand;
     Transform playerHead, playerLHand, playerRHand;

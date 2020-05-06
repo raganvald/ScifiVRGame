@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NetworkController : MonoBehaviourPunCallbacks
+public class NetworkControllerLocal : MonoBehaviourPunCallbacks
 {
 
     [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created")]

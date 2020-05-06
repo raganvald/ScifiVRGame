@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-    public class AimingLaser : MonoBehaviour
+    public class AimingLaserLocal : MonoBehaviour
     {
         float _maxRayDistance = 100f;
 

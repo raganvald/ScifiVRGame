@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootIfGrabbed : MonoBehaviour
+public class ShootIfGrabbedLocal : MonoBehaviour
 {
     private SimpleShoot simpleShoot;
     private OVRGrabbable ovrGrabbable;

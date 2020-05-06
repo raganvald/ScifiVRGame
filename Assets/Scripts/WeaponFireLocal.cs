@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
     
-    public class WeaponFire : MonoBehaviour
+    public class WeaponFireLocal : MonoBehaviour
     {
         //[FormerlySerializedAs("_bulletTrace")]
         //public LineRenderer bulletTrace;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeepRotation : MonoBehaviour
+public class KeepRotationLocal : MonoBehaviour
 {
     public GameObject trackedObj;
     Vector3 offset;
