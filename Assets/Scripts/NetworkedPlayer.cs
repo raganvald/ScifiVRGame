@@ -14,8 +14,8 @@ public class NetworkedPlayer : MonoBehaviourPunCallbacks, IPunObservable
         if (photonView.IsMine)
         {
             playerHead = GameObject.Find("CenterEyeAnchor").transform;
-            playerLHand = GameObject.Find("LeftControllerAnchor").transform;
-            playerRHand = GameObject.Find("RightControllerAnchor").transform;
+            playerLHand = GameObject.Find("CustomHandLeft").transform;
+            playerRHand = GameObject.Find("CustomHandRight").transform;
 
             networkPlayerHead.transform.SetParent(playerHead);
             networkPlayerLHand.transform.SetParent(playerLHand);

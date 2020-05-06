@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 114966958586587864}
   - component: {fileID: 6389768689079009397}
   m_Layer: 0
-  m_Name: NetworkedPlayerOI
+  m_Name: NetworkedPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,8 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   networkPlayerHead: {fileID: 5435971042314966848}
-  networkPlayerLHand: {fileID: 6522919170658326134}
-  networkPlayerRHand: {fileID: 4506513058101215855}
+  networkPlayerLHand: {fileID: 5364380123601677960}
+  networkPlayerRHand: {fileID: 7226516299365989194}
 --- !u!1 &3151543013720396331
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 143668, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 414912, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -310,8 +310,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11427812, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+--- !u!1 &5364380123601677960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 143668, guid: e6ba3498ffa1e534b91a07264266e6b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 5364380123601805244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5364380123601947516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414912, guid: e6ba3498ffa1e534b91a07264266e6b8,
@@ -329,6 +339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Character_Garbage_Male_01_Hand_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669351645135233008, guid: 629aeb148bb0a904a9e0112eff84cdc7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7669351645134734288, guid: 629aeb148bb0a904a9e0112eff84cdc7,
         type: 3}
@@ -387,12 +402,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 629aeb148bb0a904a9e0112eff84cdc7, type: 3}
---- !u!1 &4506513058101215855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7669351645135233008, guid: 629aeb148bb0a904a9e0112eff84cdc7,
-    type: 3}
-  m_PrefabInstance: {fileID: 6117395793165917599}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4506513058101714511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7669351645134734288, guid: 629aeb148bb0a904a9e0112eff84cdc7,
@@ -406,6 +415,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2634520162302163334}
     m_Modifications:
+    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+      propertyPath: m_Name
+      value: CustomHandRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 422740, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -450,20 +467,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
-      propertyPath: m_Name
-      value: CustomHandRight
-      objectReference: {fileID: 0}
-    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 11477634, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11477634, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+    - target: {fileID: 11434164, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+--- !u!1 &7226516299365989194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502,
+    type: 3}
+  m_PrefabInstance: {fileID: 7226516299365826576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7226516299365692228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 422740, guid: ba1fa4a8c66106b4988c88fe4b8e8502,
@@ -481,6 +500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Character_Garbage_Male_01_Hand_Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489011516411702805, guid: 294b3d6a298baed4aa6e5afe4520360e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2489011516411802165, guid: 294b3d6a298baed4aa6e5afe4520360e,
         type: 3}
@@ -539,12 +563,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 294b3d6a298baed4aa6e5afe4520360e, type: 3}
---- !u!1 &6522919170658326134 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2489011516411702805, guid: 294b3d6a298baed4aa6e5afe4520360e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8650481005485865059}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6522919170658224726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2489011516411802165, guid: 294b3d6a298baed4aa6e5afe4520360e,
