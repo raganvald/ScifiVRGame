@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 31ff1e40a7a776148a76ab84a0913f21
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Character_Garbage_Male_01_Hand_Left
+    100004: Character_Garbage_Male_01_Hand_Right
+    100006: Character_Garbage_Male_01_Head
+    100008: //RootNode
+    100010: Light
+    100012: Armature
+    100014: Armature.001
+    100016: Bone.Finger.2nd.R
+    100018: Bone.Finger.3rd.R
+    100020: Bone.Finger.3rd.R_end
+    100022: Bone.Fingers.1st.L
+    100024: Bone.Fingers.1st.R
+    100026: Bone.Fingers.2nd.L
+    100028: Bone.Fingers.3rd.L
+    100030: Bone.Fingers.3rd.L_end
+    100032: Bone.hand.R
+    100034: Bone.Index.1st.L
+    100036: Bone.Index.1st.R
+    100038: Bone.Index.2nd.L
+    100040: Bone.Index.2nd.R
+    100042: Bone.Index.3rd.L
+    100044: Bone.Index.3rd.L_end
+    100046: Bone.Index.3rd.R
+    100048: Bone.Index.3rd.R_end
+    100050: Bone.Left
+    100052: Bone.Thumb.1st.L
+    100054: Bone.Thumb.1st.R
+    100056: Bone.Thumb.2nd.L
+    100058: Bone.Thumb.2nd.R
+    100060: Bone.Thumb.3rd.L
+    100062: Bone.Thumb.3rd.L_end
+    100064: Bone.Thumb.3rd.R
+    100066: Bone.Thumb.3rd.R_end
+    400000: Camera
+    400002: Character_Garbage_Male_01_Hand_Left
+    400004: Character_Garbage_Male_01_Hand_Right
+    400006: Character_Garbage_Male_01_Head
+    400008: //RootNode
+    400010: Light
+    400012: Armature
+    400014: Armature.001
+    400016: Bone.Finger.2nd.R
+    400018: Bone.Finger.3rd.R
+    400020: Bone.Finger.3rd.R_end
+    400022: Bone.Fingers.1st.L
+    400024: Bone.Fingers.1st.R
+    400026: Bone.Fingers.2nd.L
+    400028: Bone.Fingers.3rd.L
+    400030: Bone.Fingers.3rd.L_end
+    400032: Bone.hand.R
+    400034: Bone.Index.1st.L
+    400036: Bone.Index.1st.R
+    400038: Bone.Index.2nd.L
+    400040: Bone.Index.2nd.R
+    400042: Bone.Index.3rd.L
+    400044: Bone.Index.3rd.L_end
+    400046: Bone.Index.3rd.R
+    400048: Bone.Index.3rd.R_end
+    400050: Bone.Left
+    400052: Bone.Thumb.1st.L
+    400054: Bone.Thumb.1st.R
+    400056: Bone.Thumb.2nd.L
+    400058: Bone.Thumb.2nd.R
+    400060: Bone.Thumb.3rd.L
+    400062: Bone.Thumb.3rd.L_end
+    400064: Bone.Thumb.3rd.R
+    400066: Bone.Thumb.3rd.R_end
+    2000000: Camera
+    2100000: A13
+    2300000: Character_Garbage_Male_01_Hand_Left
+    2300002: Character_Garbage_Male_01_Hand_Right
+    2300004: Character_Garbage_Male_01_Head
+    3300000: Character_Garbage_Male_01_Hand_Left
+    3300002: Character_Garbage_Male_01_Hand_Right
+    3300004: Character_Garbage_Male_01_Head
+    4300000: Character_Garbage_Male_01_Head
+    4300002: Character_Garbage_Male_01_Hand_Right
+    4300004: Character_Garbage_Male_01_Hand_Left
+    7400000: Armature|HandsGrabbingL
+    7400002: Armature|HandsGunHoldL
+    7400004: Armature|HandsHoldingL
+    7400006: Armature|HandsIdleL
+    7400008: Armature|PullTriggerL
+    7400010: Armature.001|HandsGrabbingR
+    7400012: Armature.001|HandsHoldingR
+    7400014: Armature.001|HandsIdleR
+    7400016: Armature.001|HoldingGunR
+    7400018: Armature.001|PullTriggerR
+    9500000: //RootNode
+    10800000: Light
+    13700000: Character_Garbage_Male_01_Hand_Left
+    13700002: Character_Garbage_Male_01_Hand_Right
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
