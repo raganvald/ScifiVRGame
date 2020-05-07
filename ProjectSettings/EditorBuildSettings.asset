@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DemoSceneOVRNetwork.unity
-    guid: 44f7feac965e4eb48a440e3379bfee21
+    path: Assets/Scenes/DemoHorrorOVRNetwork.unity
+    guid: 45ec649df684b28499becb9b47b3dcc3
   m_configObjects: {}
