@@ -41407,6 +41407,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1478750981}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1482074342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7744163040923443658, guid: a2c231c9e595f15418f07d4175b2d9a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6454944460831562425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1482074343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482074342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edf6cf77e9c4f64cb4e8a02002ad9e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1482074344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482074342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 1482074343}
+  viewIdField: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &1483503345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42539,12 +42579,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingButton: 8192
+--- !u!114 &1512714208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512714204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 1
+  ObservedComponents:
+  - {fileID: 1512714210}
+  viewIdField: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &1512714209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4042899262355950, guid: 3a041205f62419f439a714f534390f0d,
     type: 3}
   m_PrefabInstance: {fileID: 1134128837}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1512714210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512714204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edf6cf77e9c4f64cb4e8a02002ad9e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1512737357
 PrefabInstance:
   m_ObjectHideFlags: 0
