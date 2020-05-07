@@ -13,7 +13,7 @@ public class SimpleShoot : MonoBehaviour
     //General Variables
     public GameObject bulletPrefab;
     public GameObject casingPrefab;
-    public GameObject muzzleFlashPrefab;
+    public List<GameObject> particleFX = new List<GameObject>();
     public Transform barrelLocation;
     public Transform casingExitLocation;
     public AudioSource audioSource;
@@ -61,19 +61,19 @@ public class SimpleShoot : MonoBehaviour
             RayCastProjectileShoot();
         }
 
-       GameObject tempFlash;
-       if (muzzleFlashPrefab != null)
+
+        foreach (GameObject pfx in particleFX)
         {
-            tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
+            pfx.GetComponent<ParticleSystem>().Play();
         }
+
+
 
         if (audioSource != null)
         {
             audioSource.Play();
         }
         
-
-       // Destroy(tempFlash, 0.5f);
        //  Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
 
     }
