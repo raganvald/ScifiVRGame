@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     Rigidbody rigidbody;
     Animator animator;
     NavMeshAgent agent;
+     
 
     public int maxHp = 10;
     private int hp;

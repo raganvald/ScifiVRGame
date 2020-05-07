@@ -25827,6 +25827,7 @@ MonoBehaviour:
   playerMaxHealth: 10
   playerHealth: 3
   playerHealthRegenRate: 1
+  tunnelSource: {fileID: 2048662082}
 --- !u!4 &906462076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8065146511382585370, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
@@ -47199,6 +47200,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8065146511215240038}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1714286555 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8065146511382604554, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8065146511215240038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1723585589
 GameObject:
   m_ObjectHideFlags: 0
@@ -53766,6 +53773,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2048662082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8065146511382962516, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8065146511215240038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2048662088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048662082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac20df6282234e419ee9915e0fd1676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motionTarget: {fileID: 1714286555}
+  effectColor: {r: 0.3584906, g: 0, b: 0, a: 1}
+  effectCoverage: 0.75
+  effectFeather: 0.2
+  effectSkybox: {fileID: 0}
+  applyColorToBackground: 0
+  useAngularVelocity: 0
+  angularVelocityStrength: 1
+  angularVelocityMin: 0
+  angularVelocityMax: 1
+  angularVelocitySmoothing: 0.15
+  useAcceleration: 0
+  accelerationStrength: 1
+  accelerationMin: 0
+  accelerationMax: 0
+  accelerationSmoothing: 0.15
+  useVelocity: 0
+  velocityStrength: 1
+  velocityMin: 0
+  velocityMax: 0
+  velocitySmoothing: 0.15
+  motionEffectTarget: {fileID: 0}
+  useCounterMotion: 0
+  counterRotationStrength: 1
+  counterRotationPerAxis: {x: 0, y: 1, z: 0}
+  useArtificialTilt: 0
+  tiltStrength: 0
+  tiltMaxAngles: {x: 5, y: 5}
+  tiltSmoothTime: 0
+  framerateDivision: 1
+  divideTranslation: 1
+  divideRotation: 1
+  backgroundMode: 0
+  effectOverlay: 0
+  _cageParent: {fileID: 0}
+  cageDownsample: 0
+  cageAntiAliasing: 0
+  cageUpdateEveryFrame: 0
+  cageFogDensity: 0.01
+  cageFogPower: 2
+  cageFogBlend: 1
+  maskMode: 0
+  blurDownsample: 3
+  blurDistance: 3
+  blurPasses: 3
+  blurSamples: 0
+  irisZRejection: 1
+  counterVelocityMode: 0
+  counterVelocityResetDistance: 0
+  counterVelocityResetTime: 0
+  counterVelocityStrength: 1
+  counterVelocityPerAxis: {x: 1, y: 1, z: 1}
+--- !u!114 &2048662089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048662082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2520fa15d3e7aac4d8daf8b97ef7e58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2054021681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4411302195831324, guid: 5f257b0a01530674191819b4bf513840,

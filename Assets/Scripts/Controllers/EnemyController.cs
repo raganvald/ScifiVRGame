@@ -30,8 +30,6 @@ public class EnemyController : MonoBehaviour
             {
                 //attack the target
                 FaceTarget();
-                
-
             }
                     
         }
