@@ -42,6 +42,7 @@ public class NetworkEnemyHealth : MonoBehaviour
     IEnumerator RemoveEnemy()
     {
         yield return new WaitForSeconds(5);
+        gameObject.SetActive(false);
         PhotonNetwork.Destroy(gameObject);
     }
 
