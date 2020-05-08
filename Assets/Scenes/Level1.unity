@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 2
     smallestHole: 0.25
     backfaceThreshold: 5
-  m_SceneGUID: 782f833e44e222349991208c27dd613e
-  m_OcclusionCullingData: {fileID: 36300000, guid: ddd75cbcf645f054d83cd3b935694b0a,
+  m_SceneGUID: 843fe97356b872145809b86ed91dbe74
+  m_OcclusionCullingData: {fileID: 36300000, guid: d5c2bdfba3c0483428457d6d2d8c65d9,
     type: 2}
 --- !u!104 &2
 RenderSettings:
@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 5096569751248384257}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.041290134, g: 0.07311038, b: 0.12545758, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -90,7 +90,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5a75e52460d002f4b8585acc0331e32a,
+    type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
@@ -113,7 +114,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 2ad2ff8bc3a255b40b2518847f763334, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 794306527921dfc469660666bb897e2c, type: 2}
 --- !u!4 &110088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4073159022151326, guid: 6d6091aea9e88a74d9d033aecac4842e,
