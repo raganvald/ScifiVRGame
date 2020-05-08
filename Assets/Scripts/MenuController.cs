@@ -20,8 +20,15 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    public void DoContinue()
+    {
+        restartMenuCanvas.SetActive(false);
+        Time.timeScale = 1;
+    }
+
     public void DoRestart()
     {
+        DoContinue();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
