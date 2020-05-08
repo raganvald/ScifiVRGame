@@ -26,6 +26,7 @@ public class EnemySpawnPoint : MonoBehaviour
                 yield return new WaitForSeconds(spawnRate);
                 GameObject go = Instantiate(ObjectToSpawn, this.transform);
                 go.transform.parent = null;
+                spawnRate += 1;
             }
         }
 

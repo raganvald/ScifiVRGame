@@ -12,7 +12,8 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip audioGrunt;
     public AudioClip audioDie;
-    public AudioClip audioBreath;
+
+    public OVRPlayerController playerController;
 
     public GameObject tunnelSource;
 
@@ -23,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
     public void Awake()
     {
         audioSource = audioSource.GetComponent<AudioSource>();
+        playerController = GetComponent<OVRPlayerController>();
         StartCoroutine(RegenHealth());
         tb = tunnelSource.GetComponent<TunnellingBase>();
         tb.effectFeather = .2f;
@@ -45,6 +47,9 @@ public class PlayerHealth : MonoBehaviour
     {
         audioSource.clip = audioDie;
         audioSource.Play();
+        playerController.enabled = false;
+        //audioSource.enabled = false;
+        GameMgr.Instance.GameOver();
         Debug.Log("Player Died");
     }
 

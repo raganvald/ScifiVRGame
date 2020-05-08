@@ -39,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
     }
     void Die()
     {
+        GameMgr.Instance.killCount += 1;
         agent.isStopped = true;
         agent.enabled = false;
         enemyController.enabled = false;
