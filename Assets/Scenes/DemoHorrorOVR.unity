@@ -58814,6 +58814,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8065146511215240038}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &2048662086 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8065146511382095848, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8065146511215240038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2048662088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80929,6 +80935,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7245882045872634250, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991194393120427647, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2048662086}
+    - target: {fileID: 6991194393120427619, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991194393120427619, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+        type: 3}
+      propertyPath: m_Name
+      value: RestartMenuCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542477804900024121, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097026232430176831, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8065146511382962512, guid: 041e1b6e2e07c8945b5bc3a074c70cdc,
         type: 3}
       propertyPath: m_Name
