@@ -3768,6 +3768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookRadius: 100
   target: {fileID: 0}
+  active: 0
+  cooldown: 1
+  timer: 0
 --- !u!114 &4644598617205643916
 MonoBehaviour:
   m_ObjectHideFlags: 0
