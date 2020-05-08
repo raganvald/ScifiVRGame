@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class NetworkEnemySpawnPoint : MonoBehaviour
 {
-    public GameObject ObjectToSpawn;
+    public string ObjectToSpawnStr;
     public float spawnRate;
     public int batchSpawnCount;
     public float batchRate;
-    public string ObjectToSpawnStr;
 
 
     public void Awake()

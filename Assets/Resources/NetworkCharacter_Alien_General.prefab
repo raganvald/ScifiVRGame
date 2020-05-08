@@ -3620,13 +3620,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2210375848098787708}
   - component: {fileID: 2300662396822210006}
-  - component: {fileID: 2214676042058925659}
   - component: {fileID: 1915100316029559}
   - component: {fileID: 1915100316029560}
   - component: {fileID: 1915100316029561}
   - component: {fileID: 1915100316029562}
   - component: {fileID: 5055225297181102630}
   - component: {fileID: 4699125559118677014}
+  - component: {fileID: 7950739952196947745}
   m_Layer: 0
   m_Name: NetworkCharacter_Alien_General
   m_TagString: Untagged
@@ -3688,19 +3688,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2214676042058925659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214312953478107752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74cf1c50d73aca54e865eee16f27e734, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 10
 --- !u!54 &1915100316029559
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3804,6 +3791,19 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &7950739952196947745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214312953478107752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5346bb4724a4b764eae9a828992df594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 10
 --- !u!1 &2214317860618639868
 GameObject:
   m_ObjectHideFlags: 0
