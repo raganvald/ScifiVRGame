@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -28,14 +29,21 @@ public class GameMgr : MonoBehaviour{
     }
     #endregion
 
-    void Awake()
-    {
-        gameOver = false;
 
-    }
     public bool gameOver = false;
     public GameObject player;
     public int killCount = 0;
+    public GameObject scoreBoard;
+    public GameObject scoreContainer;
+    private TextMeshProUGUI score;
+
+    void Awake()
+    {
+        gameOver = false;
+        score = scoreContainer.GetComponent<TextMeshProUGUI>();
+        score.text = "0";
+
+    }
 
     public void GameOver()
     {
@@ -46,7 +54,12 @@ public class GameMgr : MonoBehaviour{
 
     IEnumerator RestartMap()
     {
+        yield return new WaitForSeconds(1);
+        score.text = killCount.ToString();
+        scoreBoard.SetActive(true);
+        
         yield return new WaitForSeconds(5);
+        scoreBoard.SetActive(false);
         Debug.Log("Loading new map");
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
