@@ -2984,6 +2984,8 @@ GameObject:
   - component: {fileID: 6204059143409264523}
   - component: {fileID: 6204059143409264522}
   - component: {fileID: 6204059143409264525}
+  - component: {fileID: 1298640955041014}
+  - component: {fileID: 1298640955041020}
   m_Layer: 0
   m_Name: IK_Character_Cop_01
   m_TagString: Untagged
@@ -3061,7 +3063,7 @@ MonoBehaviour:
   head:
     vrTarget: {fileID: 0}
     rigTarget: {fileID: 6204059144153569374}
-    trackingPositionOffset: {x: 0, y: -0.3, z: 0}
+    trackingPositionOffset: {x: 0, y: -0.4, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   leftHand:
     vrTarget: {fileID: 0}
@@ -3160,6 +3162,36 @@ MonoBehaviour:
   - rig: {fileID: 6204059143991771729}
     active: 1
   m_Effectors: []
+--- !u!114 &1298640955041014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205296116157151020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff1d262967e8bb4284ad72d80259ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightFootPoseWeight: 1
+  leftFootPoseWeight: 1
+  rightFootRotWeight: 1
+  leftFootRotWeight: 1
+  footOffset: {x: 0, y: 0.14, z: 0}
+--- !u!114 &1298640955041020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205296116157151020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379b18e4c9533514fb06f48f2fea8eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothing: 1
 --- !u!1 &6205296677818237888
 GameObject:
   m_ObjectHideFlags: 0

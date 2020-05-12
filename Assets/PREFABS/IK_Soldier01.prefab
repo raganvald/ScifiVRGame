@@ -1997,6 +1997,7 @@ GameObject:
   - component: {fileID: 5376340467982193748}
   - component: {fileID: 5376340467982193745}
   - component: {fileID: 1544358854}
+  - component: {fileID: 1720712997720039}
   m_Layer: 0
   m_Name: IK_Soldier01
   m_TagString: Untagged
@@ -2188,6 +2189,19 @@ MonoBehaviour:
   rightFootRotWeight: 1
   leftFootRotWeight: 1
   footOffset: {x: 0, y: 0.12, z: 0}
+--- !u!114 &1720712997720039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5375756238445548777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379b18e4c9533514fb06f48f2fea8eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothing: 1
 --- !u!1 &5375768107979386775
 GameObject:
   m_ObjectHideFlags: 0

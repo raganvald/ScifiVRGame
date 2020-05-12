@@ -9,7 +9,9 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         restartMenuCanvas = transform.Find("RestartMenuCanvas").gameObject;
+        StartCoroutine(StopTime());
     }
+
 
     void Update()
     {
@@ -31,6 +33,13 @@ public class MenuController : MonoBehaviour
         DoContinue();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    private IEnumerator StopTime()
+    {
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 0;
+    }
+    
 
     public void DoQuit()
     {
