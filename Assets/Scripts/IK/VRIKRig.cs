@@ -30,15 +30,23 @@ public class VRIKRig : MonoBehaviour
     void Start()
     {
         headBodyOffset = transform.position - headConstraint.position;
-
     }
 
-    void LateUpdate()
+    void Update()
     {
+        
         transform.position = headConstraint.position + headBodyOffset;
+
+        //Make the character face the direction the head is looking.
         transform.forward = Vector3.Lerp(transform.forward,
-            Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
-        //transform.forward = Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized;
+            Vector3.ProjectOnPlane(head.vrTarget.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+        //Optionally can use to instant move
+        //transform.forward = Vector3.ProjectOnPlane(headPosition.forward, Vector3.up).normalized;
+
+        
+        //Original from tutorial causes issue with body flipping
+        //transform.forward = Vector3.Lerp(transform.forward,
+        //    Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
 
         head.Map();
         leftHand.Map();

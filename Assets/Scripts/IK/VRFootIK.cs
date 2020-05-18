@@ -15,7 +15,9 @@ public class VRFootIK : MonoBehaviour
     public float leftFootRotWeight = 1;
 
     public Vector3 footOffset;
+    public LayerMask GroundLayerMask;
 
+    private int maxPlayerHeight = 2;
     private Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -26,15 +28,11 @@ public class VRFootIK : MonoBehaviour
     // Update is called once per frame
     private void OnAnimatorIK(int layerIndex)
     {
-        //Ignore hits on the player layer 
-        int layerMask = 1 << 10;
-        layerMask = ~layerMask;
-
         RaycastHit hit;
 
         //Handle the Right foot
         Vector3 rightFootPos = animator.GetIKPosition(AvatarIKGoal.RightFoot);
-        bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit, layerMask);
+        bool hasHit = Physics.Raycast(rightFootPos + (Vector3.up * maxPlayerHeight), Vector3.down, out hit, 3, GroundLayerMask);
         if (hasHit)
         {
             animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, rightFootPoseWeight);
@@ -52,7 +50,7 @@ public class VRFootIK : MonoBehaviour
 
         //Handle the Left foot
         Vector3 leftFootPos = animator.GetIKPosition(AvatarIKGoal.LeftFoot);
-        hasHit = Physics.Raycast(leftFootPos + Vector3.up, Vector3.down, out hit, layerMask);
+        hasHit = Physics.Raycast(leftFootPos + (Vector3.up * maxPlayerHeight), Vector3.down, out hit, 3, GroundLayerMask);
         if (hasHit)
         {
             animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, leftFootPoseWeight);
